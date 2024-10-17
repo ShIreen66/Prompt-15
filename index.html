@@ -1,11 +1,59 @@
+<!-- #Prompt15: Create a form for a travel booking service with drop-downs and date pickers. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Booking Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>travel booking service</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <h1>Travel Booking Form</h1>
+    <form>
+      <section>
+        <label for="Destination">Destination</label>
+        <select name="Destination" id="Destination">
+          <option value="">Select Destination</option>
+          <option value="Paris">Paris</option>
+          <option value="Rome">Rome</option>
+        </select>
+      </section>
+
+      <section>
+        <label for="Departure-Date">Departure-Date</label>
+        <input type="date" id="Departure-Date" name="Departure-Date">
+      </section>
+
+      <section>
+        <label for="Return-Date">Return-Date</label>
+        <input type="date" id="Return-Date" name="Return-Date">
+      </section>
+
+      <section>
+        <label for="Travel-Type">Travel-Type:</label>
+        <select name="Travel-Type" id="Travel-Type">
+          <option value="">Select Travel Type</option>
+          <option value="One-Way">One-Way</option>
+          <option value="Round-Trip">Round-Trip</option>
+        </select>
+      </section>
+
+      <section>
+        <label for="Passenger">Number of Passengers:</label>
+        <select name="Passenger" id="Passenger">
+          <option value="">Select Number of Passengers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </section>
+
+      <button type="submit">Book Now</button>
+
+    </form>
+  </div>
 </body>
 </html>
